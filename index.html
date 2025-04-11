@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My p5.js Sketch</title>
+    <title>Coalescence</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.min.js"></script>
     <script src="code.js"></script>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        height: 100vh;
+        font-family: sans-serif;
+      }
+
+      #controls {
+        padding: 20px;
+        width: 200px;
+      }
+
+      #canvas-wrapper {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+      }
+
+      canvas {
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    <!-- If desired, you can include content here, but it's not required for p5 -->
+    <div id="controls"></div>
+    <div id="canvas-wrapper"></div>
   </body>
 </html>
